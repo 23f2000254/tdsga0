@@ -1,5 +1,19 @@
+name: CI with Email Step
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:    # allows manual trigger
+
 jobs:
-  test:
+  example-job:
+    runs-on: ubuntu-latest
     steps:
-      - name: 23f2000254@ds.study.iitm.ac.in
-        run: echo "Hello, world!"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a simple command for 23f2000254@ds.study.iitm.ac.in
+        run: echo "Hello from step containing 23f2000254@ds.study.iitm.ac.in"
+
+      - name: Another step
+        run: echo "Workflow completed."
