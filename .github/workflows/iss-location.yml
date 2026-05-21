@@ -9,7 +9,7 @@ jobs:
   example-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: 23f2000254@ds.study.iitm.ac.in
         uses: actions/checkout@v4
 
       - name: Run a simple command for 23f2000254@ds.study.iitm.ac.in
